@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">智慧城市-0715</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">全部服务</string>
+    <string name="title_notifications">智慧环保</string>
+    <string name="title_press">新闻</string>
+    <string name="title_myself">个人中心</string>
+</resources>
