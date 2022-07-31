@@ -6,11 +6,14 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.smartcity_0715.R;
 import com.example.smartcity_0715.activities.PressDetailActivity;
 import com.example.smartcity_0715.databinding.LayoutPressBinding;
 import com.example.smartcity_0715.pojo.Press;
@@ -46,7 +49,7 @@ public class PressAdapter extends RecyclerView.Adapter<PressAdapter.ViewHolder> 
         holder.binding.pressDate.setText(press.getPublishDate());
         holder.binding.pressJump.setOnClickListener(view -> {
             Intent intent = new Intent(holder.itemView.getContext(), PressDetailActivity.class);
-            intent.putExtra("content",press.getContent());
+            intent.putExtra("id",press.getId());
             holder.itemView.getContext().startActivity(intent);
         });
     }

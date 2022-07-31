@@ -6,9 +6,12 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/service_jump"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"

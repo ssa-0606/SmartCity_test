@@ -4,15 +4,77 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/my_back.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/my_back1.xml" value="0.1795" />
+        <entry key="app/src/main/res/drawable/my_back2.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/my_back3.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/my_card.xml" value="0.1795" />
+        <entry key="app/src/main/res/drawable/my_dash.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/my_edit.xml" value="0.1795" />
         <entry key="app/src/main/res/drawable/my_search.xml" value="0.1795" />
+        <entry key="app/src/main/res/layout/activity_anli.xml" value="0.25410003662109376" />
+        <entry key="app/src/main/res/layout/activity_bus_data.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_bus_detail.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_bus_info.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_bus_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_bus_order.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_chage_pwd.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_cun_qing.xml" value="0.1893971782813168" />
+        <entry key="app/src/main/res/layout/activity_event.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_event_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_event_ping_lun.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_feed.xml" value="0.1284332275390625" />
+        <entry key="app/src/main/res/layout/activity_film_detil.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_film_list.xml" value="0.17588348388671876" />
+        <entry key="app/src/main/res/layout/activity_fupin_cun.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_fupin_duixiang.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_gruid.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_house_detail.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_house_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_library.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_library_detail.xml" value="0.16933746337890626" />
+        <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_press_detail.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_metro_detail.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_metro_list.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_metro_page.xml" value="0.17646707101089745" />
+        <entry key="app/src/main/res/layout/activity_my_anli.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_park_detail.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_park_list.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_ping_lun.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_press_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_record.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_ru_hu.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_user_order.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_myself.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.18554938007695596" />
         <entry key="app/src/main/res/layout/fragment_press.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/layout_anli.xml" value="0.18469431380932022" />
+        <entry key="app/src/main/res/layout/layout_bus_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_bus_stop.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_event_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_help.xml" value="0.19401631912964643" />
         <entry key="app/src/main/res/layout/layout_hot.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_house_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_left.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/layout_library_list.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/layout_line.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_list_card.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/layout_metro_list.xml" value="0.2907488986784141" />
+        <entry key="app/src/main/res/layout/layout_movie_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_order_pay_list.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/layout_pinglun.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/layout_pinglun1.xml" value="0.19401631912964643" />
         <entry key="app/src/main/res/layout/layout_press.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/layout_record_card.xml" value="0.1044776119402985" />
         <entry key="app/src/main/res/layout/layout_service.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_station.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.29739583333333336" />
+        <entry key="app/src/main/res/menu/my_anli.xml" value="0.20008550662676358" />
+        <entry key="app/src/main/res/menu/park_menu.xml" value="0.29635416666666664" />
       </map>
     </option>
   </component>

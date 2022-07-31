@@ -9,8 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
 
+import com.example.smartcity_0715.R;
 import com.example.smartcity_0715.databinding.FragmentDashboardBinding;
+import com.example.smartcity_0715.ui.dashboard.adapter.LeftAdapter;
+import com.example.smartcity_0715.ui.home.adapter.ServiceAdapter;
 
 public class DashboardFragment extends Fragment {
 
@@ -24,8 +28,21 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        String[] types = new String[]{"车主服务","生活服务","便民服务"};
+        LeftAdapter leftAdapter = new LeftAdapter(getContext(), R.layout.layout_left, types);
+        binding.leftCate.setAdapter(leftAdapter);
+
+        binding.leftCate.setOnItemClickListener((adapterView, view, i, l) -> {
+            dashboardViewModel.setCityService(types[i]);
+            leftAdapter.setSelect(i);
+            leftAdapter.notifyDataSetChanged();
+        });
+
+        dashboardViewModel.getText().observe(requireActivity(),cityServices -> {
+            binding.rightCate.setLayoutManager(new GridLayoutManager(getContext(),3));
+            binding.rightCate.setAdapter(new ServiceAdapter(R.layout.layout_service,cityServices));
+        });
+
         return root;
     }
 

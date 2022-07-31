@@ -1,19 +1,25 @@
 package com.example.smartcity_0715.ui.home;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.bumptech.glide.Glide;
 import com.example.smartcity_0715.R;
+import com.example.smartcity_0715.activities.PressDetailActivity;
 import com.example.smartcity_0715.databinding.FragmentHomeBinding;
 import com.example.smartcity_0715.pojo.CityService;
 import com.example.smartcity_0715.pojo.LunBo;
@@ -31,6 +37,8 @@ public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         HomeViewModel homeViewModel =
@@ -39,11 +47,17 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
         homeViewModel.getLunbos().observe(requireActivity(),lunBos -> {
             for (LunBo lunBo : lunBos) {
                 ImageView imageView = new ImageView(getContext());
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 Glide.with(getContext()).load(MyNetManger.SERVER_IP+lunBo.getAdvImg()).into(imageView);
+                imageView.setOnClickListener(view -> {
+                    Intent intent = new Intent(getContext(), PressDetailActivity.class);
+                    intent.putExtra("id",lunBo.getTargetId());
+                    startActivity(intent);
+                });
                 binding.homeVf.addView(imageView);
             }
         });
@@ -80,7 +94,7 @@ public class HomeFragment extends Fragment {
         binding.homeTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                homeViewModel.setPressList((Integer) tab.getTag());
+;                homeViewModel.setPressList((Integer) tab.getTag());
             }
 
             @Override

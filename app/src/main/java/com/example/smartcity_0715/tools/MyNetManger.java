@@ -1,5 +1,9 @@
 package com.example.smartcity_0715.tools;
 
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+
 import java.io.IOException;
 
 import okhttp3.MediaType;
@@ -19,6 +23,14 @@ public class MyNetManger {
         Response response = client.newCall(request).execute();
         return response.body().string();
     }
+    public static String GET(String url,String msg) throws IOException {
+        OkHttpClient client = new OkHttpClient();
+        MediaType mediaType = MediaType.parse("application/json");
+        RequestBody requestBody = RequestBody.create(mediaType,msg);
+        Request request = new Request.Builder().url(url).method("GET",requestBody).build();
+        Response response = client.newCall(request).execute();
+        return response.body().string();
+    }
 
     public static String GET_T(String url,String token) throws IOException {
         OkHttpClient client = new OkHttpClient();
@@ -31,7 +43,7 @@ public class MyNetManger {
         OkHttpClient client = new OkHttpClient();
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody requestBody = RequestBody.create(msg,mediaType);
-        Request request = new Request.Builder().url(url).method("POST",requestBody).addHeader("Content-Type","application/json").build();
+        Request request = new Request.Builder().url(url).method("POST",requestBody).addHeader("Content-Type","application/json").addHeader("Authorization",token).build();
         Response response = client.newCall(request).execute();
         return response.body().string();
     }
@@ -49,10 +61,9 @@ public class MyNetManger {
         OkHttpClient client = new OkHttpClient();
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody requestBody = RequestBody.create(msg,mediaType);
-        Request request = new Request.Builder().url(url).method("POST",requestBody).addHeader("Content-Type","application/json").addHeader("Authorization",token).build();
+        Request request = new Request.Builder().url(url).method("PUT",requestBody).addHeader("Content-Type","application/json").addHeader("Authorization",token).build();
         Response response = client.newCall(request).execute();
         return response.body().string();
     }
-
 
 }

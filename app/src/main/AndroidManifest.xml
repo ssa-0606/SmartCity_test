@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,6 +17,112 @@
         android:theme="@style/Theme.SmartCity_0715"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".GruidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.MyAnliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.AnliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.RuHuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.CunQingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.FupinDuixiangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.activitys.FupinCunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.myself.UserOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bus.BusOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bus.BusInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bus.BusDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bus.BusDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bus.BusListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".house.HouseDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".house.HouseListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".event.EventPingLunActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".event.EventDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".event.EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".film.FilmDetilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".film.FilmListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".metro.MetroPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".metro.MetroDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".metro.MetroListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".library.PingLunActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".library.LibraryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.myself.FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.myself.UserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.myself.ChagePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.myself.LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".library.LibraryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".part.RecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".part.ParkDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".part.ParkListActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.PressDetailActivity"
             android:exported="false" />

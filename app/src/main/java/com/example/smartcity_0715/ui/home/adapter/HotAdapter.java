@@ -1,5 +1,6 @@
 package com.example.smartcity_0715.ui.home.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.smartcity_0715.activities.PressDetailActivity;
 import com.example.smartcity_0715.databinding.LayoutHotBinding;
 import com.example.smartcity_0715.pojo.Press;
 import com.example.smartcity_0715.tools.MyNetManger;
@@ -37,6 +39,11 @@ public class HotAdapter extends RecyclerView.Adapter<HotAdapter.ViewHolder> {
         Press press = pressList.get(position);
         Glide.with(holder.itemView).load(MyNetManger.SERVER_IP+press.getCover()).into(holder.binding.hotImg);
         holder.binding.textView2.setText(press.getTitle());
+        holder.binding.hotCard.setOnClickListener(view -> {
+            Intent intent = new Intent(holder.itemView.getContext(), PressDetailActivity.class);
+            intent.putExtra("id",press.getId());
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
