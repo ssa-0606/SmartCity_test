@@ -42,7 +42,7 @@
         <entry key="app/src/main/res/layout/activity_park_detail.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_park_list.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_ping_lun.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_press_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_press_detail.xml" value="0.2258682250976562" />
         <entry key="app/src/main/res/layout/activity_record.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_ru_hu.xml" value="0.19401631912964643" />
         <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.19610507246376813" />
@@ -70,8 +70,8 @@
         <entry key="app/src/main/res/layout/layout_pinglun1.xml" value="0.19401631912964643" />
         <entry key="app/src/main/res/layout/layout_press.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/layout_record_card.xml" value="0.1044776119402985" />
-        <entry key="app/src/main/res/layout/layout_service.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/layout_station.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_service.xml" value="0.7075210571289063" />
+        <entry key="app/src/main/res/layout/layout_station.xml" value="0.3793136596679688" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.29739583333333336" />
         <entry key="app/src/main/res/menu/my_anli.xml" value="0.20008550662676358" />
         <entry key="app/src/main/res/menu/park_menu.xml" value="0.29635416666666664" />

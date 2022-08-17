@@ -13,6 +13,57 @@ import java.util.concurrent.CompletableFuture;
 
 public class MyTaskManger {
 
+    public static <T>CompletableFuture<List<T>> getListData1(String url,String member,Class<T> tClass){
+        CompletableFuture<List<T>> completableFuture = CompletableFuture.supplyAsync(() -> {
+            List<T> tList = new ArrayList<>();
+            try {
+                String result = MyNetManger.GET(url);
+                JsonArray items = new JsonParser().parse(result).getAsJsonObject().getAsJsonArray(member);
+                for (JsonElement item : items) {
+                    T t = new Gson().fromJson(item, tClass);
+                    tList.add(t);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return tList;
+        });
+        return completableFuture;
+    }
+
+    public static <T>CompletableFuture<List<T>> getListData1ByToken(String url,String member,Class<T> tClass,String token){
+        CompletableFuture<List<T>> completableFuture = CompletableFuture.supplyAsync(() -> {
+            List<T> tList = new ArrayList<>();
+            try {
+                String result = MyNetManger.GET_T(url,token);
+                JsonArray items = new JsonParser().parse(result).getAsJsonObject().getAsJsonArray(member);
+                for (JsonElement item : items) {
+                    T t = new Gson().fromJson(item, tClass);
+                    tList.add(t);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return tList;
+        });
+        return completableFuture;
+    }
+
+    public static <T>CompletableFuture<T> getData1(String url,String member,Class<T> tClass) {
+        CompletableFuture<T> completableFuture = CompletableFuture.supplyAsync(() -> {
+            T t = null;
+            try {
+                String result = MyNetManger.GET(url);
+                JsonObject item = new JsonParser().parse(result).getAsJsonObject().getAsJsonObject(member);
+                t = new Gson().fromJson(item, tClass);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return t;
+        });
+        return completableFuture;
+    }
+
     public static <T>CompletableFuture<List<T>> getListData(String url,String memeber,Class<T> tClass){
         CompletableFuture<List<T>> completableFuture = CompletableFuture.supplyAsync(() -> {
             List<T> tList = new ArrayList<>();

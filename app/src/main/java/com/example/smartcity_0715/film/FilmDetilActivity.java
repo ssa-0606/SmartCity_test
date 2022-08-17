@@ -27,7 +27,7 @@ public class FilmDetilActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         int id = getIntent().getIntExtra("id",1);
-
+        
         getData(id);
 
         binding.backBtn.setOnClickListener(view -> {
